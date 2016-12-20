@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  TableViewCategory
+
+  Created by HuDaQian on 2016/12/19.
+  Copyright © 2016年 HuXiaoQian. All rights reserved.
+*/
+
+/* 登录 */
+"LogIn" = "登录";
+
+/* 网络连接错误 */
+"ConnectError" = "网络连接失败";
+
+/* 没有请求到数据 */
+"NoData" = "未请求到数据";
+
+/* 刷新 */
+"ReFresh" = "刷新";
