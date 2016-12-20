@@ -1,6 +1,9 @@
 # TableViewCategory
 0行代码增加无数据的时候tableView的背景，可以自定义tableView背景
 
+
+![image](https://github.com/HuDaQian/TableViewPlaceHolder/blob/master/TableViewCategory/Untitled.gif)
+
 ##使用说明
 1.自定义customPlaceHolderView里的界面。
 2.
