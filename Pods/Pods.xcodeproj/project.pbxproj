@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		012C15C89ACB6B834702D21CAFDAB7F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AA9769BAF0011C11306AF9A75742D8 /* Foundation.framework */; };
-		131898239FA08F104D2C1512B6FA4EC3 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9156B5D7AD191B1D50947D7C4A9C5 /* Reachability-dummy.m */; };
+		22B5E52D91849CAEBCE9E880B087D921 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7587CE669F43043C23D8EA6BDEA80A /* Reachability.m */; };
 		2CA437B5630A074A880BA715E43652A3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092C124E24793E864CDCFFF2EE5ADE28 /* SystemConfiguration.framework */; };
 		33F518F283C9963C2CFB0C6682071A7A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A2A70CB6AB8500885AFDAB18D35A12 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A5E302393FCBADB3922E7FE532A6A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AA9769BAF0011C11306AF9A75742D8 /* Foundation.framework */; };
 		8010204D9AC4BDBE5D305286C732684B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AA9769BAF0011C11306AF9A75742D8 /* Foundation.framework */; };
 		A67079954D9B64712BF332973C13954A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AA9769BAF0011C11306AF9A75742D8 /* Foundation.framework */; };
 		C14F6B0B0586F9804FE8A3A2CB5B71D8 /* Pods-TableViewCategoryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5619A983418D96ED0CEDABEAFCC73 /* Pods-TableViewCategoryUITests-dummy.m */; };
-		DB2ACB54E32B43D3B5F7BDBAC1296292 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7587CE669F43043C23D8EA6BDEA80A /* Reachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DBAC6BE9D23F2715540917D153E43DE9 /* Pods-TableViewCategoryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E261F01E28011975D274763FF4110755 /* Pods-TableViewCategoryTests-dummy.m */; };
+		E36E64BD3BA12B3BA0E68E9764D23640 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9156B5D7AD191B1D50947D7C4A9C5 /* Reachability-dummy.m */; };
 		E92F925692E214A9815C960ACBE715C7 /* Pods-TableViewCategory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC9B44055E2AC344467D961DDB6758D /* Pods-TableViewCategory-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -245,7 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9600AA3D2A404C9C98D6CB3D8E4A5427 /* Build configuration list for PBXNativeTarget "Reachability" */;
 			buildPhases = (
-				6B8C1770B65CAD0B681CBE1E186CEC0E /* Sources */,
+				D52D4EC34278387B239EF58B5C963048 /* Sources */,
 				BD0A66DFA4577CE4D41706791685FBE4 /* Frameworks */,
 				A49953B6C2CBD82882B4274D84A9B22B /* Headers */,
 			);
@@ -345,12 +345,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B8C1770B65CAD0B681CBE1E186CEC0E /* Sources */ = {
+		D52D4EC34278387B239EF58B5C963048 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				131898239FA08F104D2C1512B6FA4EC3 /* Reachability-dummy.m in Sources */,
-				DB2ACB54E32B43D3B5F7BDBAC1296292 /* Reachability.m in Sources */,
+				E36E64BD3BA12B3BA0E68E9764D23640 /* Reachability-dummy.m in Sources */,
+				22B5E52D91849CAEBCE9E880B087D921 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,30 +451,7 @@
 			};
 			name = Release;
 		};
-		6D14BA04DC15D47FABD7715FAD21BE20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09E80A36C6CD46B7F3D7F5A056B41016 /* Reachability.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7893EC369B22AFB187E3D6A21F79EAC3 /* Debug */ = {
+		553DF23CACD665FB64485B4B4B2E4CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09E80A36C6CD46B7F3D7F5A056B41016 /* Reachability.xcconfig */;
 			buildSettings = {
@@ -485,7 +462,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -610,6 +587,29 @@
 			};
 			name = Debug;
 		};
+		DE04A8A27B51F817E8E368E708CD20F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E80A36C6CD46B7F3D7F5A056B41016 /* Reachability.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -692,8 +692,8 @@
 		9600AA3D2A404C9C98D6CB3D8E4A5427 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7893EC369B22AFB187E3D6A21F79EAC3 /* Debug */,
-				6D14BA04DC15D47FABD7715FAD21BE20 /* Release */,
+				553DF23CACD665FB64485B4B4B2E4CFF /* Debug */,
+				DE04A8A27B51F817E8E368E708CD20F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
