@@ -12,7 +12,7 @@
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
-    CustomTableView *listTableView;
+    UITableView *listTableView;
 }
 @property (nonatomic, retain) NSMutableArray *dataArray;
 
@@ -44,12 +44,12 @@
     [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
-    listTableView = [[CustomTableView alloc] initWithFrame:CGRectMake(0, 84, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-84) style:UITableViewStylePlain];
+    listTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 84, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-84) style:UITableViewStylePlain];
     
     __weak typeof(self) weakSelf = self;
-    listTableView.freshBlock = ^(){
-        [weakSelf getData];
-    };
+//    listTableView.freshBlock = ^(){
+//        [weakSelf getData];
+//    };
     listTableView.delegate = self;
     listTableView.dataSource = self;
     [self.view addSubview:listTableView];

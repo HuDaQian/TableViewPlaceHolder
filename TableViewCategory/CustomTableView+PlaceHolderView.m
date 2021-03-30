@@ -82,5 +82,8 @@
     [self sure_reloadData];
 }
 
+-(void)reloadData {
+    
+}
 
 @end
